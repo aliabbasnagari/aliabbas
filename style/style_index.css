@@ -1,0 +1,54 @@
+.main-section {
+    padding: 0;
+    margin: 0;
+    background-color: aqua;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+  .img-wrapper {
+    background-color: blue;
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+  }
+
+  .data-wrapper{
+    background-color: blueviolet;
+    flex-grow: 1;
+    align-self: center;
+    text-align: center;
+  }
+  
+  .main-section .ali-image {
+    background-image: url(../images/ali_abbas_image.png);
+    flex-grow: 1;
+    max-height: 80vh;
+    min-width: 30vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+  }
+
+  .main-section .call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1rem;
+    align-self: center;
+    margin-top: -10rem;
+  }
+
+  @media (max-width: 900px) {
+    .main-section .img-wrapper {
+      display: none;
+    }
+  
+    .home-main-section {
+      justify-content: center;
+    }
+  }

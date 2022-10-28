@@ -1,0 +1,83 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #2F303A;
+  font-family: Poppins_r;
+  font-size: 1.2rem;
+  color: white;
+  min-height: 100vh;
+}
+
+.full-height-grow {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 40px;
+  flex-grow: 1;
+}
+
+.main_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 140px;
+}
+
+.main-nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .main-nav a {
+    color: inherit;
+    text-decoration: none;
+    padding: 1rem;
+  }
+  
+  .main-nav a:hover {
+    color: #adadad;
+  }
+
+  .logo {
+    align-items: center;
+    margin-left: 3vh;
+    display: flex;
+  }
+
+  .actions {
+    margin-right: 3vh;
+  }
+
+  .main-section {
+    padding: 3vh;
+  }
+
+@media (min-width:1000px) {
+    .logo {
+        margin-left: 15vh;
+    }
+    .actions {
+        margin-right: 15vh;
+    }
+}
+
+  @font-face {
+    font-family: poppins_r;
+    src: url(../Fonts/poppins/Poppins-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: poppins_el;
+    src: url(../Fonts/poppins/Poppins-ExtraLight.ttf);
+  }
+  
