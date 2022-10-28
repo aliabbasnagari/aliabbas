@@ -20,7 +20,7 @@ body {
 .container {
   max-width: 1500px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 0px;
   flex-grow: 1;
 }
 
@@ -50,24 +50,15 @@ body {
 
   .logo {
     align-items: center;
-    margin-left: 3vh;
     display: flex;
-  }
-
-  .actions {
-    margin-right: 3vh;
-  }
-
-  .main-section {
-    padding: 3vh;
   }
 
 @media (min-width:1000px) {
     .logo {
-        margin-left: 15vh;
+        margin-left: 10vh;
     }
     .actions {
-        margin-right: 15vh;
+        margin-right: 10vh;
     }
 }
 
