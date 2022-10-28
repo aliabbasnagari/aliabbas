@@ -49,6 +49,7 @@ body {
   }
 
   .logo {
+    margin-left: 1rem;
     align-items: center;
     display: flex;
   }
@@ -60,6 +61,12 @@ body {
     .actions {
         margin-right: 10vh;
     }
+}
+
+@media (max-width: 720px) {
+  .actions{
+    display: none;
+  }
 }
 
   @font-face {

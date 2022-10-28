@@ -42,7 +42,7 @@
     background-image: url(../images/ali_abbas_image.png);
     flex-grow: 1;
     max-height: 80vh;
-    min-width: 30vw;
+    max-width: 30vw;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom left;
@@ -120,9 +120,27 @@
     transition: 0.3s ease-in-out;
   }
 
+  @media (max-width:1000px) {
+    .img-wrapper  {
+      max-width: 500px;
+    }
+
+    .data-wrapper {
+      max-width: 500px;
+    }
+  }
+
   @media (max-width: 900px) {
     .main-section .img-wrapper {
       display: none;
+    }
+
+    .data-wrapper{
+      margin-top: -10vw;
+      max-width: 100%;
+      flex-grow: 1;
+      align-self: center;
+      text-align: center;
     }
   
     .home-main-section {
