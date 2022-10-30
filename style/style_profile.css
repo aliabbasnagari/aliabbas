@@ -1,8 +1,20 @@
   .div-edu {
     background: #4d4f5f;
-    padding: 5rem;
+    padding: 3rem;
     border-radius: 20px;
-  }
-  .div-edu h3 {
     font-family: poppins_el;
+    box-shadow: 10px 10px 10px #222222e1;
+  }
+
+  .div-edu h1 {
+    margin-top: -1rem;
+    font-family: poppins_r;
+  }
+
+  .degrees {
+    display: flex;
+  }
+
+  .degrees h3 {
+    width: 50%;
   }
