@@ -11,10 +11,57 @@
     font-family: poppins_r;
   }
 
+  .div-edu  hr {
+    display: none;
+  }
+
   .degrees {
     display: flex;
   }
 
   .degrees h3 {
     width: 50%;
+  }
+
+  @media (max-width: 900px) {
+
+    .div-edu {
+      margin: 1rem;
+      background: #4d4f5f;
+      padding: 1rem;
+      border-radius: 20px;
+      font-family: poppins_el;
+      box-shadow: 10px 10px 10px #222222e1;
+    }
+
+    .div-edu h1 {
+      margin-top: 0rem;
+      font-family: poppins_r;
+    }
+
+    .div-edu  hr {
+      border-top: 2px solid;
+      border-radius: 5px;
+      display: block;
+    }
+
+    .degrees {
+      display: block;
+    }
+
+    .degrees h3 {
+      width: 100%;
+    }
+
+    .data-wrapper{
+      margin-top: -10vw;
+      max-width: 100%;
+      flex-grow: 1;
+      align-self: center;
+      text-align: center;
+    }
+  
+    .home-main-section {
+      justify-content: center;
+    }
   }
