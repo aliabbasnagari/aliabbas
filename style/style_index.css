@@ -1,217 +1,250 @@
 .main-section {
-    padding: 0;
-    margin: 0;
-    /*background-color: aqua;*/
-    display: flex;
-    align-items: stretch;
-    justify-content: space-between;
-    flex-grow: 1;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.img-wrapper {
+  /*background-color: blue;*/
+  flex-grow: 1;
+  flex-direction: column;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+}
+
+.data-wrapper {
+  margin-top: -10vw;
+  max-width: 30vw;
+  /*background-color: blueviolet;*/
+  flex-grow: 1;
+  align-self: center;
+  text-align: center;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 5em;
+  margin-bottom: -0.5rem;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 2.6em;
+  font-family: poppins_el;
+}
+
+.main-section .ali-image {
+  background-image: url(../images/ali_abbas_image.png);
+  flex-grow: 1;
+  max-height: 80vh;
+  max-width: 30vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.main-section .call-to-action {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 1rem;
+  align-self: center;
+  margin-top: -10rem;
+}
+
+.data-wrapper div {
+  margin-top: 3rem;
+}
+
+.btn {
+  width: 210px;
+  height: 60px;
+  padding: 0.75rem 1.5rem;
+  margin-right: 10px;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-family: poppins;
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.prof {
+  background-color: #2180d8;
+  color: white;
+}
+.prof:hover {
+  background-color: #1762a7;
+}
+
+.cv {
+  background-color: white;
+  color: black;
+}
+
+.cv:hover {
+  background-color: rgb(214, 214, 214);
+}
+
+.social-nav {
+  align-self: flex-end;
+  position: absolute;
+  /*background-color: #1762A7;*/
+}
+
+.social-nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-nav ul li {
+  margin: 10px;
+}
+
+.social-nav ul li a img {
+  width: 60px;
+  height: 60px;
+  transition: 0.2s;
+}
+
+.social-nav ul :hover {
+  transform: scale(1.2);
+  transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 1400px) {
+  .title {
+    font-size: 3.8em;
   }
 
-  .img-wrapper {
-    /*background-color: blue;*/
-    flex-grow: 1;
+  .subtitle {
+    font-size: 2em;
+  }
+
+  .btn {
+    width: 160px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .title {
+    margin-left: -100px;
+  }
+
+  .subtitle {
+    margin-left: -100px;
+  }
+  .data-wrapper {
+    margin-top: 0;
+    margin-bottom: -8vw;
+  }
+  .data-wrapper div {
+    display: flex;
+    margin-right: 3vw;
     flex-direction: column;
-    display: flex;
-    align-items: stretch;
-    justify-content: flex-end;
+    align-items: flex-end;
+  }
+}
+
+@media (min-width: 900px) {
+  .img-wrapper {
+    max-width: 60%;
   }
 
-  .data-wrapper{
-    margin-top: -10vw;
-    max-width: 30vw;
-    /*background-color: blueviolet;*/
-    flex-grow: 1;
-    align-self: center;
-    text-align: center;
+  .data-wrapper {
+    max-width: 40%;
+  }
+}
+
+@media (max-width: 900px) {
+  .main-section .img-wrapper {
+    display: none;
+  }
+
+  .data-wrapper div {
+    display: block;
+    margin-right: 0;
   }
 
   .title {
     font-weight: 500;
-    font-size: 5em;
+    font-size: 4.5em;
     margin-bottom: -0.5rem;
   }
 
   .subtitle {
     font-weight: 500;
-    font-size: 2.6em;
+    font-size: 2.4em;
     font-family: poppins_el;
   }
-  
-  .main-section .ali-image {
-    background-image: url(../images/ali_abbas_image.png);
+
+  .title {
+    margin-left: 0;
+  }
+
+  .subtitle {
+    margin-left: 0;
+  }
+
+  .data-wrapper {
+    margin-top: -10vw;
+    max-width: 100%;
     flex-grow: 1;
-    max-height: 80vh;
-    max-width: 30vw;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom left;
-  }
-
-  .main-section .call-to-action {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 1rem;
     align-self: center;
-    margin-top: -10rem;
+    text-align: center;
   }
 
-  .data-wrapper div {
-    margin-top: 3rem;
+  .home-main-section {
+    justify-content: center;
   }
+}
 
-  .btn {
-    width: 210px;
-    height: 60px;
-    padding: .75rem 1.5rem;
-    margin-right: 10px;
-    border-radius: .5rem;
-    text-decoration: none;
-    font-family: poppins;
-    font-size: 1.5rem;
-    outline: none;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .prof {
-    background-color: #2180d8;
-    color: white;
-  }
-  .prof:hover {
-    background-color: #1762A7;
-  }
-  
-  .cv {
-    background-color: white;
-    color: black;
-  }
-  
-  .cv:hover {
-    background-color: rgb(214, 214, 214);
-  }
+.home-page-circle-1 {
+  position: absolute;
+  width: 8vw;
+  height: 8vw;
+  border-radius: 50%;
+  background-color: rgb(188, 58, 128, 0.1);
+  top: 30vh;
+  left: 60vw;
+  z-index: -1;
+}
 
-  .social-nav {
-    align-self: flex-end;
-    position: absolute;
-    /*background-color: #1762A7;*/
-  }
+.home-page-circle-2 {
+  position: absolute;
+  width: 25vw;
+  height: 25vw;
+  border-radius: 50%;
+  background-color: rgb(52, 87, 178, 0.1);
+  bottom: 10vh;
+  left: 8vw;
+  z-index: -1;
+}
 
-  .social-nav ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
+.home-page-circle-3 {
+  position: absolute;
+  overflow: hidden;
+  width: 45vw;
+  height: 45vw;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
 
-  .social-nav ul li {
-    margin: 10px;
-  }
-  
-  .social-nav ul li a img {
-    width: 60px;
-    height: 60px;
-    transition: 0.2s;
-  }
-  
-  .social-nav ul :hover {
-    transform: scale(1.2);
-    transition: 0.3s ease-in-out;
-  }
-
-  @media (max-width: 1300px) {
-    .title {
-      font-size: 3.8em;
-    }
-  
-    .subtitle {
-      font-size: 2em;
-    }
-
-    .btn {
-      width: 160px;
-    }
-  }
-
-  @media (min-width: 900px) {
-    .img-wrapper  {
-      max-width: 60%;
-    }
-
-    .data-wrapper {
-      max-width: 40%;
-    }
-  }
-
-  @media (max-width: 900px) {
-    .main-section .img-wrapper {
-      display: none;
-    }
-
-    .title {
-      font-weight: 500;
-      font-size: 4.5em;
-      margin-bottom: -0.5rem;
-    }
-  
-    .subtitle {
-      font-weight: 500;
-      font-size: 2.4em;
-      font-family: poppins_el;
-    }
-
-    .data-wrapper{
-      margin-top: -10vw;
-      max-width: 100%;
-      flex-grow: 1;
-      align-self: center;
-      text-align: center;
-    }
-  
-    .home-main-section {
-      justify-content: center;
-    }
-  }
-
-  .home-page-circle-1 {
-    position: absolute;
-    width: 8vw;
-    height: 8vw;
-    border-radius: 50%;
-    background-color: rgb(188, 58, 128, .1);
-    top: 30vh;
-    left: 60vw;
-    z-index: -1;
-  }
-  
-  .home-page-circle-2 {
-    position: absolute;
-    width: 25vw;
-    height: 25vw;
-    border-radius: 50%;
-    background-color: rgb(52, 87, 178, .1);
-    bottom: 10vh;
-    left: 8vw;
-    z-index: -1;
-  }
-  
-  .home-page-circle-3 {
-    position: absolute;
-    overflow: hidden;
-    width: 45vw;
-    height: 45vw;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-  }
-  
-  .home-page-circle-3::before {
-    content: '';
-    transform: translate(40%, 40%);
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    background-color: rgb(200, 224, 103, .1);
-  }
+.home-page-circle-3::before {
+  content: "";
+  transform: translate(40%, 40%);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: rgb(200, 224, 103, 0.1);
+}

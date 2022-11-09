@@ -1,11 +1,13 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 body {
   padding: 0;
   margin: 0;
-  background-color: #2F303A;
+  background-color: #2f303a;
   font-family: Poppins_r;
   font-size: 1.2rem;
   color: white;
@@ -18,126 +20,128 @@ body {
 }
 
 .container {
-  max-width: 1500px;
+  max-width: 80%;
   margin: 0 auto;
   padding: 0 0px;
   flex-grow: 1;
 }
 
 .main_header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 140px;
 }
 
 .main-nav ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  .main-nav a {
-    color: inherit;
-    text-decoration: none;
-    padding: 1rem;
-  }
-  
-  .main-nav a:hover {
-    color: #adadad;
-  }
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
+.main-nav a {
+  color: inherit;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.main-nav a:hover {
+  color: #adadad;
+}
+
+.logo {
+  margin-left: 1rem;
+  align-items: center;
+  display: flex;
+}
+
+.topnav {
+  overflow: hidden;
+  display: none;
+}
+
+.topnav #myLinks {
+  display: none;
+  background-color: #333;
+  position: absolute;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 50px;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+}
+
+.topnav a.icon {
+  position: relative;
+  display: block;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  color: black;
+}
+
+.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.icon div {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  border-radius: 6px;
+}
+
+.drop ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.drop a {
+  color: inherit;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.drop a:hover {
+  color: #adadad;
+}
+
+@media (min-width: 1000px) {
   .logo {
-    margin-left: 1rem;
-    align-items: center;
-    display: flex;
+    margin-left: 10vh;
   }
-
-  .topnav {
-    overflow: hidden;
-    display: none;
+  .actions {
+    margin-right: 10vh;
   }
-  
-  .topnav #myLinks {
-    display: none;
-    background-color: #333;
-    position: absolute;
-  }
-  
-  .topnav a {
-    color: white;
-    padding: 14px 50px;
-    text-decoration: none;
-    font-size: 20px;
-    display: block;
-  }
-  
-  .topnav a.icon {
-    position: relative;
-    display: block;
-    right: 0;
-    top: 0;
-  }
-  
-  .topnav a:hover {
-    color: black;
-  }
-  
-  .active {
-    background-color: #04AA6D;
-    color: white;
-  }
-
-  .icon div {
-    width: 35px;
-    height: 5px;
-    background-color: white;
-    margin: 6px 0;
-    border-radius: 6px;
-  }
-
-  .drop ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  .drop a {
-    color: inherit;
-    text-decoration: none;
-    padding: 1rem;
-  }
-  
-  .drop a:hover {
-    color: #adadad;
-  }
-
-@media (min-width:1000px) {
-    .logo {
-        margin-left: 10vh;
-    }
-    .actions {
-        margin-right: 10vh;
-    }
 }
 
 @media (max-width: 720px) {
+  .container {
+    max-width: 100%;
+  }
   .main-nav {
     display: none;
   }
-  .topnav{
+  .topnav {
     display: block;
   }
 }
 
-  @font-face {
-    font-family: poppins_r;
-    src: url(../Fonts/poppins/Poppins-Regular.ttf);
-  }
-  
-  @font-face {
-    font-family: poppins_el;
-    src: url(../Fonts/poppins/Poppins-ExtraLight.ttf);
-  }
-  
+@font-face {
+  font-family: poppins_r;
+  src: url(../Fonts/poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: poppins_el;
+  src: url(../Fonts/poppins/Poppins-ExtraLight.ttf);
+}
