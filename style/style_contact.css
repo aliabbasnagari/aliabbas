@@ -1,0 +1,10 @@
+.div-contact {
+  text-align: center;
+}
+
+.div-contact h1 {
+  font-family: poppins_el;
+}
+
+@media (max-width: 900px) {
+}
