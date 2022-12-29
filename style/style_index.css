@@ -333,7 +333,7 @@
   }
 
   .data-wrapper {
-    margin-top: -10vw;
+    margin-top: -15vw;
     max-width: 100%;
     flex-grow: 1;
     align-self: center;
@@ -346,5 +346,6 @@
 
   .btn {
     width: 130px;
+    font-size: medium;
   }
 }
