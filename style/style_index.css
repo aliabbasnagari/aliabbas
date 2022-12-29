@@ -153,7 +153,49 @@
   display: none;
 }
 
-@media (max-width: 1400px) {
+.home-page-circle-1 {
+  position: absolute;
+  width: 8vw;
+  height: 8vw;
+  border-radius: 50%;
+  background-color: rgb(188, 58, 128, 0.1);
+  top: 30vh;
+  left: 60vw;
+  z-index: -1;
+}
+
+.home-page-circle-2 {
+  position: absolute;
+  width: 25vw;
+  height: 25vw;
+  border-radius: 50%;
+  background-color: rgb(52, 87, 178, 0.1);
+  bottom: 10vh;
+  left: 8vw;
+  z-index: -1;
+}
+
+.home-page-circle-3 {
+  position: absolute;
+  overflow: hidden;
+  width: 45vw;
+  height: 45vw;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.home-page-circle-3::before {
+  content: "";
+  transform: translate(40%, 40%);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: rgb(200, 224, 103, 0.1);
+}
+
+@media only screen and (max-width: 1400px) {
   .title {
     font-size: 3.8em;
   }
@@ -167,7 +209,7 @@
   }
 }
 
-@media (max-width: 1100px) {
+@media only screen and (max-width: 1100px) {
   .title {
     margin-left: -100px;
   }
@@ -187,17 +229,7 @@
   }
 }
 
-@media (min-width: 900px) {
-  .img-wrapper {
-    max-width: 60%;
-  }
-
-  .data-wrapper {
-    max-width: 40%;
-  }
-}
-
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .main-section .img-wrapper {
     display: none;
   }
@@ -255,44 +287,64 @@
   }
 }
 
-.home-page-circle-1 {
-  position: absolute;
-  width: 8vw;
-  height: 8vw;
-  border-radius: 50%;
-  background-color: rgb(188, 58, 128, 0.1);
-  top: 30vh;
-  left: 60vw;
-  z-index: -1;
-}
+@media only screen and (max-width: 450px) {
+  .main-section .img-wrapper {
+    display: none;
+  }
 
-.home-page-circle-2 {
-  position: absolute;
-  width: 25vw;
-  height: 25vw;
-  border-radius: 50%;
-  background-color: rgb(52, 87, 178, 0.1);
-  bottom: 10vh;
-  left: 8vw;
-  z-index: -1;
-}
+  .social-nav2 {
+    display: block;
+    margin-top: 30px;
+  }
 
-.home-page-circle-3 {
-  position: absolute;
-  overflow: hidden;
-  width: 45vw;
-  height: 45vw;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-}
+  .ali-image2 {
+    width: 100%;
+    height: 8rem;
+    background-image: url(../images/ali_abbas_image_2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: -2rem;
+  }
 
-.home-page-circle-3::before {
-  content: "";
-  transform: translate(40%, 40%);
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-  background-color: rgb(200, 224, 103, 0.1);
+  .data-wrapper div {
+    display: block;
+    margin-right: 0;
+  }
+
+  .title {
+    font-weight: 500;
+    font-size: 3em;
+    margin-bottom: -0.5rem;
+  }
+
+  .subtitle {
+    font-weight: 500;
+    font-size: 1.6em;
+    font-family: poppins_el;
+  }
+
+  .title {
+    margin-left: 0;
+  }
+
+  .subtitle {
+    margin-left: 0;
+  }
+
+  .data-wrapper {
+    margin-top: -10vw;
+    max-width: 100%;
+    flex-grow: 1;
+    align-self: center;
+    text-align: center;
+  }
+
+  .home-main-section {
+    justify-content: center;
+  }
+
+  .btn {
+    width: 130px;
+  }
 }

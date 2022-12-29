@@ -62,8 +62,7 @@ body {
 }
 
 .topnav #myLinks {
-  display: none;
-  background-color: #333;
+  background-color: #444;
   position: absolute;
 }
 
@@ -93,7 +92,7 @@ body {
 
 .icon div {
   width: 35px;
-  height: 5px;
+  height: 4px;
   background-color: white;
   margin: 6px 0;
   border-radius: 6px;
@@ -133,6 +132,12 @@ body {
   }
   .topnav {
     display: block;
+  }
+
+  #myList {
+    transition-timing-function: ease;
+    transition: 0.7s;
+    overflow: hidden;
   }
 }
 

@@ -1,8 +1,10 @@
+var x = document.getElementById("myList");
+var bIcon = document.querySelector(".icon");
+x.style.maxHeight = "0px";
 function burgerMenu() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
+  if (x.style.maxHeight == "0px") {
+    x.style.maxHeight = "250px";
   } else {
-    x.style.display = "block";
+    x.style.maxHeight = "0px";
   }
 }
