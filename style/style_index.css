@@ -176,7 +176,7 @@
 }
 
 .home-page-circle-3 {
-  position: absolute;
+  position: fixed;
   overflow: hidden;
   width: 45vw;
   height: 45vw;
